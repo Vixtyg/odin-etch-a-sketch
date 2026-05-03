@@ -12,10 +12,22 @@
             <h2 id="header-description">
                 What kind of grid size would you like?
             </h2>
-            <form>
-                <input name="grid-size" type="text" inputmode="numeric" placeholder="16x16" spellcheck="false">
-                <button id="go-button">Go!</button>
-            </form>
+            <div id = "input-size">
+                <input name="grid-size" type="text" inputmode="numeric"
+                 placeholder="16x16" spellcheck="false" autocomplete="off">
+               <div id="button-suggestion-row">
+                    <button>
+                        16x16
+                    </button>
+                    <button>
+                        64x64
+                    </button>
+                    <button>
+                        256x256
+                    </button>
+               </div>
+                 <button id="go-button">Go!</button>
+            </div>
         </div>
     </body>
 
