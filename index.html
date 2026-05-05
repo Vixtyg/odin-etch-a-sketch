@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <link href="style.css" rel="stylesheet">
-    </head>
-    <body>
-        <div id="heading-container"> 
-            <h1 id="header-text">
-                Welcome to your Etch-a-sketch!
-            </h1>
-            <h2 id="header-description">
-                What kind of grid size would you like?
-            </h2>
-            <div id = "input-size">
-                <input name="grid-size" type="text" inputmode="numeric"
-                 placeholder="16x16" spellcheck="false" autocomplete="off">
-               <div id="button-suggestion-row">
-                    <button>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="heading-container">
+        <h1 id="header-text">
+            Welcome to your Etch-a-sketch!
+        </h1>
+        <h2 id="header-description">
+            What kind of grid size would you like?
+        </h2>
+        <div id="input-size">
+            <input name="grid-size" type="text" inputmode="numeric" placeholder="16x16" spellcheck="false"
+                autocomplete="off">
+            <div id="button-suggestion-row">
+                <div id="left-button-wrap">
+                    <button class="row-button" id="left-row-button">
                         16x16
                     </button>
-                    <button>
-                        64x64
-                    </button>
-                    <button>
+                </div>
+                <button class="row-button" id="middle-row-button">
+                    64x64
+                </button>
+                <div id="right-button-wrap">
+                    <button class="row-button" id="right-row-button">
                         256x256
                     </button>
-               </div>
-                 <button id="go-button">Go!</button>
+                </div>
             </div>
+            <button id="go-button">Go!</button>
         </div>
-    </body>
+    </div>
+    <div>
 
-        <script src="script.js"></script>
+    </div>
+    <div id="canvas">
+
+    </div>
+</body>
+
+<script src="script.js"></script>
+
 </html>
