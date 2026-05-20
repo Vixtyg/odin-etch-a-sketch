@@ -13,6 +13,7 @@
         </h1>
         <h2 id="header-description">
             What kind of grid size would you like?
+            <p>(Square grids only!)</p>
         </h2>
         <div id="input-size">
             <input name="grid-size" type="text" inputmode="numeric" placeholder="16x16" spellcheck="false"
@@ -24,11 +25,11 @@
                     </button>
                 </div>
                 <button class="row-button" id="middle-row-button">
-                    64x64
+                    32x32
                 </button>
                 <div id="right-button-wrap">
                     <button class="row-button" id="right-row-button">
-                        256x256
+                        64x64
                     </button>
                 </div>
             </div>
@@ -41,6 +42,9 @@
     <div id="canvas">
 
     </div>
+    <div id="reset-button-wrapper"><button id="reset-canvas">
+            Reset
+        </button></div>
 </body>
 
 <script src="script.js"></script>

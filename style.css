@@ -30,6 +30,26 @@ input {
     width: 250px;
 }
 
+#reset-button-wrapper {
+    display: flex;
+}
+
+#reset-canvas {
+    opacity: 0;
+    background-color: #c46660;
+    color: black;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 40px;
+    transition: background-color 0.2s;
+}
+
+#reset-canvas:hover {
+    background-color: #a3544e;
+    transition: background-color 0.2s;
+}
+
 #canvas {
     width: 512px;
     height: 512px;
@@ -60,7 +80,7 @@ input {
 
 #header-text {
     /*0.7s*/
-    animation: fade-in 0s ease-out forwards;
+    animation: fade-in 0.7s ease-out forwards;
 }
 
 #header-description {
@@ -68,7 +88,7 @@ input {
     text-align: center;
 
     /*1s 0.7s*/
-    animation: fade-in 0s ease-out forwards 0s;
+    animation: fade-in 1s ease-out forwards 0.7s;
 }
 
 #heading-container {
@@ -84,7 +104,7 @@ input {
     opacity: 0;
 
     /*0.8s 1.2s*/
-    animation: fade-in-up 0s ease-out forwards 0s;
+    animation: fade-in-up 0.8s ease-out forwards 1.2s;
 }
 
 #right-button-wrap {
@@ -99,6 +119,10 @@ input {
     background-color: #D496A7;
     box-sizing: border-box;
     border: solid 1px #5D576B;
+}
+
+.small-pixel-colored {
+    background-color: black;
 }
 
 .small-pixel:hover {
