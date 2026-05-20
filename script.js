@@ -140,7 +140,7 @@ goButton.addEventListener("click", (e) => {
     let childrenAmount = canvas.children.length;
     canvas.innerHTML = '';
 
-    window.scroll({ top: 200, behavior: 'smooth' })
+    window.scroll({ top: 250, behavior: 'smooth' })
     let dimensions = parseInput(inputBar.value);
     if (canvas.children.length == 0) {
         goButton.disabled = true
